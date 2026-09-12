@@ -33,6 +33,13 @@ te werken aan automatisering.
   X-kosten zelf). Ondersteunt --channels (kanalen tonen), --text/--from
   (post samenstellen), --at (inplannen), en DRY_RUN=true (alleen loggen,
   niets plaatsen). Logt elke poging naar output/posted_log.jsonl
+- auto_post.py — draait fetch_news.py, match_quotes.py en
+  generate_review.py achter elkaar, kiest daarna zelf de beste nieuwe
+  match (score, dan publicatiedatum, met een dedup van 14 dagen tegen
+  exact dezelfde eerder geplaatste quote) en post 'm via post.py, zonder
+  handmatige tussenkomst. Quote en auteur komen altijd letterlijk uit
+  matches.json/quotes.json. Geen kandidaat boven de drempel betekent
+  bewust niet posten die run
 
 ## Voortgang (fases)
 - Fase 1, projectstructuur: klaar
@@ -44,10 +51,12 @@ te werken aan automatisering.
 - Fase 4b, gevoelig-nieuws-filter (blocklist): klaar, 0/21 artikelen
   geraakt in huidige testrun
 - Fase 5, review-overzicht (generate_review.py): klaar
-- Fase 6, posten: Buffer-koppeling technisch klaar (zie hieronder),
-  daadwerkelijk automatisch posten nog niet gedaan — elke keer expliciete
-  toestemming nodig voordat post.py zonder DRY_RUN draait
-- Fase 7, volledige testrun van nieuws tot voorstel: nog te doen
+- Fase 6, posten: klaar — volledig geautomatiseerd op expliciet verzoek
+  van de gebruiker (bewuste keuze, zie hieronder: geen handmatige
+  goedkeuring per post meer, alleen blocklist + score-drempel + dedup
+  als controle)
+- Fase 7, volledige testrun van nieuws tot voorstel: klaar, zie
+  Buffer-koppeling hieronder (eerste live post is geplaatst)
 
 ## Buffer-koppeling (2026-09-12)
 - Reden voor Buffer i.p.v. rechtstreeks de X API: X heeft sinds februari
@@ -66,8 +75,44 @@ te werken aan automatisering.
   functiesignatuur zonder `from __future__ import annotations`, de venv
   hier draait op 3.9.6) — gefixt met dezelfde aanpak als eerder bij
   match_quotes.py
-- Nog niet gedaan: een echte post plaatsen. Dat gebeurt pas na expliciete
-  toestemming per keer, nooit automatisch als vaste regel
+- Eerste echte post is handmatig getriggerd (via auto_post.py, niet
+  DRY_RUN): "If you're changing the world, you're working on important
+  things." — Larry Page, Buffer post-id 6aa59ec17da3ee968d0240e9
+
+## Volledige automatisering (2026-09-12)
+- Op expliciet verzoek van de gebruiker ("ik wil het juist automatiseren,
+  het is voor mij niet een heel serieus project") is gekozen voor volledig
+  automatisch posten, zonder goedkeuring per post. Dit is een bewuste
+  afwijking van het eerdere "altijd expliciete toestemming"-uitgangspunt
+  — vastgelegd zodat toekomstige sessies niet per ongeluk terugvallen op
+  de oude, voorzichtigere aanname
+- `Desktop/quoteradar` is een git-repo geworden, gepusht naar
+  https://github.com/schulingw-png/quoteradar (nodig omdat cloud-routines
+  alleen uit een git-repo kunnen draaien). `.env`, `venv/` en `output/`
+  staan in `.gitignore` en zijn nooit gepusht
+- Een Claude Code cloud-routine "QuoteRadar" (id
+  trig_01L1udSXDpKJ8emGskgxW6JH) draait dagelijks om 09:00 Europe/Amsterdam
+  (cron 0 7 * * *, UTC) op environment env_01FcsphzjLegExxQjKhMsbR4, kloont
+  de repo, en voert auto_post.py uit
+- Bewuste afweging over de sleutel: er is in deze sessie geen manier
+  gevonden om een los "geheim"/environment variable aan een cloud-routine
+  mee te geven. De BUFFER_API_KEY en BUFFER_CHANNEL_ID staan daarom
+  letterlijk in de prompt/instructions van de routine, wat betekent dat ze
+  in leesbare vorm opgeslagen liggen in de routine-configuratie bij
+  Anthropic (zichtbaar voor wie de routine kan beheren op
+  claude.ai/code/routines). De gebruiker is hierover expliciet gevraagd
+  (incl. het alternatief van een aparte, losse sleutel) en heeft bewust
+  gekozen om dezelfde sleutel te hergebruiken
+- De routine had bij aanmaken standaard vier MCP-connectors gekoppeld
+  (Gmail, Google Drive, Portfolio Dividend Tracker, visualize) die niets
+  met dit project te maken hebben — verwijderd via een update
+  (clear_mcp_connections), de routine heeft nu alleen toegang tot de
+  eigen repo
+- Nog open: auto_post.py plaatst hooguit één nieuwe post per run en
+  vermijdt herhaling van exact dezelfde quote binnen 14 dagen, maar heeft
+  geen expliciete "al gepost vandaag"-check. Bij precies één run per dag
+  (huidige schema) is dat geen probleem; wordt relevant als de
+  cron-frequentie ooit omhoog gaat
 
 ## Belangrijk aandachtspunt
 Matches moeten inhoudelijk kloppen en goed aanvoelen voor lezers, niet
