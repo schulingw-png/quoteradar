@@ -1,0 +1,9 @@
+{
+  "faillissement": ["faillissement", "faillissementen", "failliet", "bankruptcy", "bankrupt", "insolvency", "insolvent"],
+  "ontslag": ["ontslag", "ontslagen", "layoff", "layoffs", "job cuts", "fired"],
+  "overlijden": ["overlijden", "overleden", "death", "dies", "dead", "passed away"],
+  "fraude": ["fraude", "fraud"],
+  "rechtszaak": ["rechtszaak", "rechtszaken", "lawsuit", "sued", "litigation"],
+  "ramp": ["ramp", "rampen", "disaster", "catastrophe"],
+  "boete": ["boete", "boetes", "fine", "fined", "penalty"]
+}

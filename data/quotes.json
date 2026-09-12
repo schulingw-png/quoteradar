@@ -1,0 +1,197 @@
+[
+  {
+    "text": "Real artists ship.",
+    "author": "Steve Jobs",
+    "keywords": ["shippen", "imperfectie", "uitvoering", "ship", "execution", "imperfect"]
+  },
+  {
+    "text": "A crazy spaghetti-mess.",
+    "author": "Elon Musk",
+    "keywords": ["itereren", "imperfectie", "falen", "leren", "iterate", "imperfect", "failure", "learning"]
+  },
+  {
+    "text": "Risk comes from not knowing what you're doing.",
+    "author": "Warren Buffett",
+    "keywords": ["risico", "risk", "kennis", "knowledge", "aandelen", "stock"]
+  },
+  {
+    "text": "A monumentally stupid decision.",
+    "author": "Warren Buffett",
+    "keywords": ["beslissingen", "decisions", "ego", "fouten", "mistakes", "emotie", "temperament"]
+  },
+  {
+    "text": "Price is what you pay. Value is what you get.",
+    "author": "Warren Buffett",
+    "keywords": ["waarde", "value", "investeren", "invest", "aandelen", "stock"]
+  },
+  {
+    "text": "It's far better to buy a wonderful company at a fair price than a fair company at a wonderful price.",
+    "author": "Warren Buffett",
+    "keywords": ["investeren", "invest", "kwaliteit", "quality", "groei", "growth", "overname", "acquisition"]
+  },
+  {
+    "text": "Innovation distinguishes between a leader and a follower.",
+    "author": "Steve Jobs",
+    "keywords": ["innovatie", "innovation", "leiderschap", "leadership"]
+  },
+  {
+    "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+    "author": "Steve Jobs",
+    "keywords": ["passie", "passion", "werk", "work", "groei", "growth"]
+  },
+  {
+    "text": "Stay hungry, stay foolish.",
+    "author": "Steve Jobs",
+    "keywords": ["ambitie", "ambition", "innovatie", "innovation"]
+  },
+  {
+    "text": "Management is doing things right; leadership is doing the right things.",
+    "author": "Peter Drucker",
+    "keywords": ["leiderschap", "leadership", "management"]
+  },
+  {
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "keywords": ["innovatie", "innovation", "toekomst", "future", "groei", "growth"]
+  },
+  {
+    "text": "Efficiency is doing things right; effectiveness is doing the right things.",
+    "author": "Peter Drucker",
+    "keywords": ["efficiëntie", "efficiency", "management"]
+  },
+  {
+    "text": "If you want something new, you have to stop doing something old.",
+    "author": "Peter Drucker",
+    "keywords": ["verandering", "change", "innovatie", "innovation", "groei", "growth"]
+  },
+  {
+    "text": "Your margin is my opportunity.",
+    "author": "Jeff Bezos",
+    "keywords": ["winst", "profit", "omzet", "revenue", "groei", "growth"]
+  },
+  {
+    "text": "If you double the number of experiments you do per year, you're going to double your inventiveness.",
+    "author": "Jeff Bezos",
+    "keywords": ["innovatie", "innovation", "groei", "growth"]
+  },
+  {
+    "text": "The stock is not the company, and the company is not the stock.",
+    "author": "Jeff Bezos",
+    "keywords": ["aandelen", "stock", "beurs", "exchange", "waarde", "value"]
+  },
+  {
+    "text": "Your most unhappy customers are your greatest source of learning.",
+    "author": "Bill Gates",
+    "keywords": ["kennis", "knowledge", "groei", "growth"]
+  },
+  {
+    "text": "I choose a lazy person to do a hard job because a lazy person will find an easy way to do it.",
+    "author": "Bill Gates",
+    "keywords": ["efficiëntie", "efficiency", "innovatie", "innovation"]
+  },
+  {
+    "text": "When something is important enough, you do it even if the odds are not in your favor.",
+    "author": "Elon Musk",
+    "keywords": ["risico", "risk", "ambitie", "ambition"]
+  },
+  {
+    "text": "Persistence is very important. You should not give up unless you are forced to give up.",
+    "author": "Elon Musk",
+    "keywords": ["ambitie", "ambition", "groei", "growth"]
+  },
+  {
+    "text": "The biggest risk is not taking any risk.",
+    "author": "Mark Zuckerberg",
+    "keywords": ["risico", "risk", "ambitie", "ambition"]
+  },
+  {
+    "text": "Done is better than perfect.",
+    "author": "Sheryl Sandberg",
+    "keywords": ["efficiëntie", "efficiency", "ambitie", "ambition"]
+  },
+  {
+    "text": "Business opportunities are like buses, there's always another one coming.",
+    "author": "Richard Branson",
+    "keywords": ["groei", "growth", "ambitie", "ambition"]
+  },
+  {
+    "text": "Take care of your employees and they'll take care of your business.",
+    "author": "Richard Branson",
+    "keywords": ["leiderschap", "leadership", "management"]
+  },
+  {
+    "text": "If you're changing the world, you're working on important things.",
+    "author": "Larry Page",
+    "keywords": ["verandering", "change", "innovatie", "innovation", "ipo"]
+  },
+  {
+    "text": "Leadership is hard to define and good leadership even harder.",
+    "author": "Indra Nooyi",
+    "keywords": ["leiderschap", "leadership", "management"]
+  },
+  {
+    "text": "Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine.",
+    "author": "Jack Ma",
+    "keywords": ["ambitie", "ambition", "toekomst", "future"]
+  },
+  {
+    "text": "He who lives by the crystal ball will eat shattered glass.",
+    "author": "Ray Dalio",
+    "keywords": ["risico", "risk", "toekomst", "future"]
+  },
+  {
+    "text": "The big money is not in the buying and selling, but in the waiting.",
+    "author": "Charlie Munger",
+    "keywords": ["investeren", "invest", "aandelen", "stock", "waarde", "value", "dividend"]
+  },
+  {
+    "text": "Success is best when it's shared.",
+    "author": "Howard Schultz",
+    "keywords": ["groei", "growth", "leiderschap", "leadership"]
+  },
+  {
+    "text": "There is only one boss: the customer.",
+    "author": "Sam Walton",
+    "keywords": ["management", "omzet", "revenue", "vraag", "demand"]
+  },
+  {
+    "text": "Coming together is a beginning, staying together is progress, working together is success.",
+    "author": "Henry Ford",
+    "keywords": ["leiderschap", "leadership", "groei", "growth", "aanbod", "supply"]
+  },
+  {
+    "text": "Concentrate your energies, your thoughts, and your capital.",
+    "author": "Andrew Carnegie",
+    "keywords": ["investeren", "invest", "kwaliteit", "quality", "rente", "interest rate"]
+  },
+  {
+    "text": "Markets go up and down, but the American economy has proven remarkably resilient.",
+    "author": "Jamie Dimon",
+    "keywords": ["aandelen", "stock", "beurs", "exchange", "inflatie", "inflation"]
+  },
+  {
+    "text": "Purpose is not a mission statement, it's the fundamental reason a company exists.",
+    "author": "Larry Fink",
+    "keywords": ["toekomst", "future", "groei", "growth"]
+  },
+  {
+    "text": "Focus on your strengths, not on fixing your weaknesses.",
+    "author": "Reed Hastings",
+    "keywords": ["efficiëntie", "efficiency", "kwaliteit", "quality"]
+  },
+  {
+    "text": "Our industry does not respect tradition, it only respects innovation.",
+    "author": "Satya Nadella",
+    "keywords": ["innovatie", "innovation", "verandering", "change"]
+  },
+  {
+    "text": "We don't have a good crystal ball, so we manage the controllables.",
+    "author": "Tim Cook",
+    "keywords": ["risico", "risk", "management"]
+  },
+  {
+    "text": "I would rather earn 1% off 100 people's efforts than 100% of my own efforts.",
+    "author": "John D. Rockefeller",
+    "keywords": ["winst", "profit", "omzet", "revenue", "groei", "growth"]
+  }
+]
